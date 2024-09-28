@@ -1,0 +1,22 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: MS_API_Gateway
+    
+  cloud:
+    gateway:
+      mvc:
+        routes:
+        - id: MS_RESTAPI
+          uri: http://localhost:8081
+          predicates:
+          - Path=/api1/**
+        - id: MS_RESTAPI_02
+          uri: http://localhost:9000
+          predicates:
+          - Path=/web/** 
+  
+  
+  
+ 

@@ -1,0 +1,19 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: Gateway01
+    
+  cloud:
+   gateway:
+    routes:
+        - id: MS_REST_API05
+          uri: http://localhost:8082
+          predicates:
+            - Path=/demo/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'

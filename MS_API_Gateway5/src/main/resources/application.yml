@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: MS_API_Gateway5
+    cloud:
+    gateway:
+      routes:
+        - id: MS_REST_API05
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/demo/**
+

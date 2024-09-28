@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: MS_RestAPI_02
+  config:
+    import: configserver:http://localhost:9091  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9000
+
+#  config:
+#    import: configserver:http://localhost:9091

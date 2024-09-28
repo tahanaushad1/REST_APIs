@@ -1,0 +1,29 @@
+package com.example.demo.controller;
+
+import org.springframework.boot.context.properties.bind.DefaultValue;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.databind.ser.std.StdKeySerializers.Default;
+
+@RestController
+public class AddController {
+	@PostMapping("/add")
+	public int addNum(@RequestParam("Num1")int Num1,@RequestParam("Num2")int Num2,@RequestParam(value = "Num3", defaultValue="0")int Num3 ) {
+		return Num1+Num2+Num3;
+	}
+	@PostMapping("/sub")
+	public int subNum(@RequestParam("Num1")int Num1,@RequestParam("Num2")int Num2,@RequestParam(value = "Num3", defaultValue="0")int Num3 ) {
+		return Num1-Num2;
+	}
+	@PostMapping("/mul")
+	public int mulNum(@RequestParam("Num1")int Num1,@RequestParam("Num2")int Num2,@RequestParam(value = "Num3", defaultValue="0")int Num3 ) {
+		return Num1*Num2;
+	}
+	@PostMapping("/div")
+	public int divNum(@RequestParam("Num1")int Num1,@RequestParam("Num2")int Num2,@RequestParam(value = "Num3", defaultValue="0")int Num3 ) {
+		return Num1/Num2;
+	}
+
+}

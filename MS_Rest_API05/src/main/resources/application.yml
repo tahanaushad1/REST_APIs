@@ -1,0 +1,25 @@
+server:
+ port: 8082 
+spring:
+  application:
+    name: MS_Rest_API05
+   
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:1111/
+  cloud:
+    compatibility-verifier:
+      enabled: false  
+    
+  config:
+    import: configserver:http://localhost:9999 
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'   
+
+     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\91620\Desktop\Rest API\MS_Config_Server\target\classes\META-INF\maven\com.example\MS_Config_Server"/>
+			<item value="C:\Users\91620\Desktop\Rest API\MS_Config_Server"/>
+			<item value="D:\Rest\demo"/>
+			<item value="D:\Rest\RestfulWebServicesCrudOperations1"/>
+			<item value="C:\Users\91620\Desktop\demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>
